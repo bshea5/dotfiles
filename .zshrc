@@ -1,6 +1,10 @@
 #
-# ~/.bashrc
+# ~/.zshrc
 #
+# Add these lines to the top of your .zshrc file
+# Run compinit before compdef is used.
+autoload -Uz compinit
+compinit
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -8,10 +12,13 @@
 # PS1='[\u@\h \W]\$ '
 
 # Set to superior editing mode
-set -o vi
+bindkey -v
 
 # keybinds
-bind -x '"\C-l":clear'
+function clear-screen() { clear }
+zle -N clear-screen
+bindkey '^L' clear-screen
+
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
 export VISUAL=nvim
@@ -81,43 +88,21 @@ export HISTCONTROL=ignorespace
 
 # ~~~~~~~~~~~~~~~ Functions ~~~~~~~~~~~~~~~~~~~~~~~~
 
-# This function is stolen from rwxrob
-
-clone() {
-	local repo="$1" user
-	local repo="${repo#https://github.com/}"
-	local repo="${repo#git@github.com:}"
-	if [[ $repo =~ / ]]; then
-		user="${repo%%/*}"
-	else
-		user="$GITUSER"
-		[[ -z "$user" ]] && user="$USER"
-	fi
-	local name="${repo##*/}"
-	local userd="$REPOS/github.com/$user"
-	local path="$userd/$name"
-	[[ -d "$path" ]] && cd "$path" && return
-	mkdir -p "$userd"
-	cd "$userd"
-	echo gh repo clone "$user/$name" -- --recurse-submodule
-	gh repo clone "$user/$name" -- --recurse-submodule
-	cd "$name"
-} && export -f clone
 
 # ~~~~~~~~~~~~~~~ SSH ~~~~~~~~~~~~~~~~~~~~~~~~
 # SSH Script from arch wiki
 
 if ! pgrep -u "$USER" ssh-agent >/dev/null; then
-	ssh-agent >"$XDG_RUNTIME_DIR/ssh-agent.env"
+    ssh-agent >"$XDG_RUNTIME_DIR/ssh-agent.env"
 fi
 if [[ ! "$SSH_AUTH_SOCK" ]]; then
-	source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 fi
 
 # Only run on Ubuntu
 
 if [[ $(grep -E "^(ID|NAME)=" /etc/os-release | grep -q "ubuntu")$? == 0 ]]; then
-	eval "$(ssh-agent -s)" >/dev/null
+    eval "$(ssh-agent -s)" >/dev/null
 fi
 
 # adding keys was buggy, add them outside of the script for now
@@ -178,22 +163,22 @@ alias fishies=asciiquarium
 
 # kubectl
 alias k='kubectl'
-source <(kubectl completion bash)
-complete -o default -F __start_kubectl k
+source <(kubectl completion zsh)
+# complete -o default -F __start_kubectl k
 
 # sourcing
 # source "$HOME/.privaterc"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	source "$HOME/.fzf.bash"
-	# echo "I'm on Mac!"
+    source "$HOME/.fzf.zsh"
+    # echo "I'm on Mac!"
 
-	# brew bash completion
-	[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+    # brew bash completion
+    [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 else
-	#	source /usr/share/fzf/key-bindings.bash
-	#	source /usr/share/fzf/completion.bash
-	[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+    #	source /usr/share/fzf/key-bindings.bash
+    #	source /usr/share/fzf/completion.bash
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)

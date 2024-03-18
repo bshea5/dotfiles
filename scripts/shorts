@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gsed -i 's/size = 25/size = 55/g' /users/mischa/repos/github.com/mischavandenburg/dotfiles/alacritty.toml
+gsed -i 's/size = 25/size = 55/g' /users/mischa/repos/github.com/bshea5/dotfiles/alacritty.toml
 clear
 
 # split pane and set to correct width on 4k screen
