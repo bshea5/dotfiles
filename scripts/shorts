@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gsed -i 's/size = 25/size = 55/g' /users/mischa/repos/github.com/bshea5/dotfiles/alacritty.toml
+gsed -i 's/size = 25/size = 55/g' /users/$(whoami)/repos/github.com/bshea5/dotfiles/alacritty.toml
 clear
 
 # split pane and set to correct width on 4k screen
@@ -13,4 +13,4 @@ tmux split-pane -h \; select-pane -l \; resize-pane -x 54
 echo "Remember to leave some room at the top in vim"
 
 # # remove padding from alacritty
-# gsed -i 's/x = 7/x = 0/g' /Users/mischa/Repos/github.com/mischavandenburg/dotfiles/alacritty.toml
+# gsed -i 's/x = 7/x = 0/g' /Users/$(whoami)/Repos/github.com/bshea5/dotfiles/alacritty.toml

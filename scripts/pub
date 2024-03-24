@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/mischa/git/testing
+cd /home/$(whoami)/git/testing
 echo x >> README.md
 git status
 git add .

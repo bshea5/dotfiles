@@ -1,4 +1,4 @@
 #!/bin/bash
 
-gsed -i 's/size = 35/size = 25/g' /Users/mischa/Repos/github.com/bshea5/dotfiles/alacritty.toml
-gsed -i 's/size = 55/size = 25/g' /Users/mischa/Repos/github.com/bshea5/dotfiles/alacritty.toml
+gsed -i 's/size = 35/size = 25/g' /Users/$(whoami)/Repos/github.com/bshea5/dotfiles/alacritty.toml
+gsed -i 's/size = 55/size = 25/g' /Users/$(whoami)/Repos/github.com/bshea5/dotfiles/alacritty.toml
