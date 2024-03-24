@@ -39,13 +39,13 @@ ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 brew install --cask alacritty
 
 # brew packages Mac
-# amethyst fzf nvim exa hugo bash-completion@2 newsboat kubectl
+# amethyst fzf nvim exa hugo bash-completion@2 newsboat kubectl starship
 
 # ubuntu packages apt
 sudo apt install ripgrep
 
 # Github CLI
-brew install gh
+brew install gh starship
 
 # ubuntu apt neovim setup
 sudo apt install gcc g++ unzip

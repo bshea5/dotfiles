@@ -5,8 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# PS1='[\u@\h \W]\$ '
-
 # Set to superior editing mode
 set -o vi
 
@@ -128,24 +126,8 @@ ssh-add -q ~/.ssh/id_ed25519
 # ssh-add -q ~/.ssh/vanoord
 #} &>/dev/null
 
-# ~~~~~~~~~~~~~~~ Prompt ~~~~~~~~~~~~~~~~~~~~~~~~
-
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWSTASHSTATE=1
-export GIT_PS1_SHOWUNTRACKEDFILES=1
-# Explicitly unset color (default anyhow). Use 1 to set it.
-export GIT_PS1_SHOWCOLORHINTS=1
-export GIT_PS1_DESCRIBE_STYLE="branch"
-# export GIT_PS1_SHOWUPSTREAM="auto git"
-
-# if [[ -f "$XDG_CONFIG_HOME/bash/gitprompt.sh" ]]; then
-# 	source "$XDG_CONFIG_HOME/bash/gitprompt.sh"
-# fi
-
-# PROMPT_COMMAND='__git_ps1 "\u@\h:\W" " \n$ "'
-# colorized prompt
-# PROMPT_COMMAND='__git_ps1 "\[\e[33m\]\u\[\e[0m\]@\[\e[34m\]\h\[\e[0m\]:\[\e[35m\]\W\[\e[0m\]" " \n$ "'
-
+# Moved to starship 20-03-2024 for all my prompt needs.
+eval "$(starship init bash)"
 
 # ~~~~~~~~~~~~~~~ Aliases ~~~~~~~~~~~~~~~~~~~~~~~~
 
