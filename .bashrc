@@ -147,7 +147,6 @@ alias c="clear"
 # ls
 alias ls='ls --color=auto'
 alias ll='ls -la'
-# alias la='exa -laghm@ --all --icons --git --color=always'
 alias la='ls -lathr'
 
 # finds all files recursively and sorts by last modification, ignore hidden files
