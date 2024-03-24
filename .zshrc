@@ -106,11 +106,9 @@ if [[ $(grep -E "^(ID|NAME)=" /etc/os-release | grep -q "ubuntu")$? == 0 ]]; the
 fi
 
 # adding keys was buggy, add them outside of the script for now
-# ssh-add -q ~/.ssh/mischa
-# ssh-add -q ~/.ssh/mburg
+# ssh-add -q ~/.ssh/bshea5
 #{
 ssh-add -q ~/.ssh/id_ed25519
-# ssh-add -q ~/.ssh/vanoord
 #} &>/dev/null
 
 # ~~~~~~~~~~~~~~~ Prompt ~~~~~~~~~~~~~~~~~~~~~~~~

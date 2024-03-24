@@ -44,7 +44,6 @@ brew install --cask alacritty
 # ubuntu packages apt
 sudo apt install ripgrep
 
-# Github CLI
 brew install gh starship
 
 # ubuntu apt neovim setup
@@ -58,10 +57,6 @@ brew install kubectl kubectx derailed/k9s/k9s
 # ubuntu brew for neovim setup
 brew install neovim go lazygit
 
-# ubuntu specific notes
-# create symbolic link to neovim from vim when not using neovim on
-# Ubuntu systems, because I use the v alias everywhere.
-# sudo ln -sf /usr/bin/vim /usr/bin/nvim
 
 # Fonts
 chmod +x ./scripts/fonts
