@@ -36,3 +36,11 @@ cd dotfiles
 
 without sudo. Enter password as needed. Running with sudo doesn't recognize
 brew.
+
+# TODO
+
+- Configure Python tooling
+  - pip
+  - pipenv
+  - pyenv
+  - poetry?
