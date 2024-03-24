@@ -177,9 +177,6 @@ else
 	[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 fi
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/mischa/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 # Only needed for npm install on WSL
 #export NVM_DIR="$HOME/.config/nvm"

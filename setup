@@ -36,7 +36,7 @@ ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install --cask alacritty
+brew install alacritty
 
 # brew packages Mac
 # amethyst fzf nvim exa hugo bash-completion@2 newsboat kubectl starship
@@ -44,7 +44,7 @@ brew install --cask alacritty
 # ubuntu packages apt
 sudo apt install ripgrep
 
-brew install gh starship
+brew install gh
 
 # ubuntu apt neovim setup
 sudo apt install gcc g++ unzip
@@ -54,9 +54,13 @@ brew install fd fzf
 # kubernetes tools
 brew install kubectl kubectx derailed/k9s/k9s
 
-# ubuntu brew for neovim setup
-brew install neovim go lazygit
+brew install go
 
+# ubuntu brew for neovim setup
+brew install neovim lazygit
+
+# install starship
+brew install starship
 
 # Fonts
 chmod +x ./scripts/fonts
