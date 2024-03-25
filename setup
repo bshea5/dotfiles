@@ -44,6 +44,7 @@ ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 # ubuntu packages apt
 sudo apt install ripgrep
 
+# GitHub CLI
 brew install gh
 
 # ubuntu apt neovim setup
@@ -54,12 +55,13 @@ brew install fd fzf
 # kubernetes tools
 brew install kubectl kubectx derailed/k9s/k9s
 
+# golang
 brew install go
 
-# ubuntu brew for neovim setup
+# neovim and distro
 brew install neovim lazygit
 
-# install starship
+# cross platform shell prompt
 brew install starship
 
 # Fonts
