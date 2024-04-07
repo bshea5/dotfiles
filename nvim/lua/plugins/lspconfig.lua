@@ -5,15 +5,14 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        -- pyright = {},
+        pyright = {},
         bashls = {},
-        -- gopls = {},
+        gopls = {},
         bicep = {},
         yamlls = {},
         marksman = {},
         powershell_es = {},
-        -- azure_pipelines_ls = {},
+        azure_pipelines_ls = {},
         terraformls = {},
         helm_ls = {},
       },

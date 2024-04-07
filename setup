@@ -64,6 +64,10 @@ brew install neovim lazygit
 # cross platform shell prompt
 brew install starship
 
+# Install devbox for emphemeral dev enviroments
+# Installs Nix if not already on machine.
+curl -fsSL https://get.jetpack.io/devbox | bash
+
 # Fonts
 chmod +x ./scripts/fonts
 ./scripts/fonts
