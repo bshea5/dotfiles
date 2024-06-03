@@ -3,7 +3,7 @@ return {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
-      ---@type lspconfig.options
+      ---@type lsp.ConfigurationItem
       servers = {
         pyright = {},
         bashls = {},

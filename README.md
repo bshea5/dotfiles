@@ -22,7 +22,8 @@ cd dotfiles
 - Install WSL in powershell
   https://learn.microsoft.com/en-us/windows/wsl/install
 - Install Windows Terminal `winget install --id Microsoft.WindowsTerminal -e`
-- Get gruvbox-material color scheme for Windows Terminal.
+- Get catppuccin color scheme for Windows Terminal,
+  https://github.com/catppuccin/windows-terminal.
 - Open the settings.json in windows preview by opening a new tab and click on
   Settings while holding shift
 - Paste in the colorschemes and asssign it to the Ubuntu profile in Windows

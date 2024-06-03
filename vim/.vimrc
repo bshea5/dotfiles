@@ -7,6 +7,8 @@ endif
 
 set nocompatible
 
+set termguicolors
+
 "####################### Vi Compatible (~/.exrc) #######################
 
 " automatically indent new lines
@@ -234,7 +236,7 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
   call plug#begin('~/.local/share/vim/plugins')
   Plug 'zah/nim.vim'
   Plug 'conradirwin/vim-bracketed-paste'
-  Plug 'morhetz/gruvbox'
+  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'vim-pandoc/vim-pandoc'
   Plug 'rwxrob/vim-pandoc-syntax-simple'
