@@ -64,6 +64,9 @@ brew install neovim lazygit
 # cross platform shell prompt
 brew install starship
 
+# alternative editor to vim & nvim
+brew install helix
+
 # Install devbox for emphemeral dev enviroments
 # Installs Nix if not already on machine.
 curl -fsSL https://get.jetpack.io/devbox | bash
