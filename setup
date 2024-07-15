@@ -55,6 +55,9 @@ brew install fd fzf
 # kubernetes tools
 brew install kubectl kubectx derailed/k9s/k9s
 
+# Install rust. Recommended to use rustup.
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # golang
 brew install go
 
@@ -69,7 +72,7 @@ brew install helix
 
 # Install devbox for emphemeral dev enviroments
 # Installs Nix if not already on machine.
-curl -fsSL https://get.jetpack.io/devbox | bash
+# curl -fsSL https://get.jetpack.io/devbox | bash
 
 # Fonts
 chmod +x ./scripts/fonts

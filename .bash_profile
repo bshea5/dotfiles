@@ -22,4 +22,7 @@ export XDG_CONFIG_HOME="$HOME"/.config
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
-if [ -e /home/bshea/.nix-profile/etc/profile.d/nix.sh ]; then . /home/bshea/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+# if [ -e /home/bshea/.nix-profile/etc/profile.d/nix.sh ]; then . /home/bshea/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# Run stuff installed via Cargo
+. "$HOME/.cargo/env"
