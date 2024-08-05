@@ -50,7 +50,7 @@ brew install gh
 # ubuntu apt neovim setup
 sudo apt install gcc g++ unzip
 
-brew install fd fzf
+brew install fd fzf jq yq
 
 # kubernetes tools
 brew install kubectl kubectx derailed/k9s/k9s
@@ -72,7 +72,7 @@ brew install helix
 
 # Install devbox for emphemeral dev enviroments
 # Installs Nix if not already on machine.
-# curl -fsSL https://get.jetpack.io/devbox | bash
+curl -fsSL https://get.jetpack.io/devbox | bash
 
 # Fonts
 chmod +x ./scripts/fonts
