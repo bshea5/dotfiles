@@ -74,6 +74,9 @@ brew install helix
 # Installs Nix if not already on machine.
 curl -fsSL https://get.jetpack.io/devbox | bash
 
+# Install 'uv', Python package & project manager from Astral
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 # Fonts
 chmod +x ./scripts/fonts
 ./scripts/fonts
