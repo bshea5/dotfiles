@@ -113,7 +113,7 @@ ssh-add -q ~/.ssh/id_ed25519
 
 
 # Moved to starship 20-03-2024 for all my prompt needs.
-eval "$(starship init bash)"
+eval "$(starship init zsh)"
 
 # ~~~~~~~~~~~~~~~ Aliases ~~~~~~~~~~~~~~~~~~~~~~~~
 

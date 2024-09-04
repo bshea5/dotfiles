@@ -42,16 +42,17 @@ ln -sf "$PWD/starship/starship.toml" "$XDG_CONFIG_HOME"/starship.toml
 # brew packages Mac
 # amethyst fzf nvim exa hugo bash-completion@2 newsboat kubectl starship
 
-# ubuntu packages apt
-sudo apt install ripgrep
+# ubuntu apt neovim setup
+sudo apt install gcc g++ unzip
+
+# ubuntu install zsh
+# comment out for macos
+sudo apt install zsh
 
 # GitHub CLI
 brew install gh
 
-# ubuntu apt neovim setup
-sudo apt install gcc g++ unzip
-
-brew install fd fzf jq yq
+brew install fd fzf jq yq ripgrep
 
 # kubernetes tools
 brew install kubectl kubectx derailed/k9s/k9s
@@ -81,3 +82,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # Fonts
 chmod +x ./scripts/fonts
 ./scripts/fonts
+
+
+# Change shell to zsh
+# type -a zsh ## find path to zsh ##
+chsh -s /bin/zsh ## change bash to zsh ##
