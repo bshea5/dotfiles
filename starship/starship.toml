@@ -1,0 +1,24 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = true
+
+[cmd_duration]
+min_time = 5000
+format = 'underwent [$duration](bold yellow)'
+
+[directory]
+truncate_to_repo = true
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = ''
+untracked = '🤷'
+stashed = ''
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+disabled = false
