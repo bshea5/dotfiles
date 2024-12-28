@@ -26,3 +26,5 @@ if [ -e /home/bshea/.nix-profile/etc/profile.d/nix.sh ]; then . /home/bshea/.nix
 
 # Run stuff installed via Cargo
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"

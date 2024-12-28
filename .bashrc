@@ -183,3 +183,5 @@ fi
 
 # Run stuff installed via Cargo
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"
