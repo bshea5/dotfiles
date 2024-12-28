@@ -60,8 +60,8 @@ brew install kubectl kubectx derailed/k9s/k9s
 # Install rust. Recommended to use rustup.
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# golang
-brew install go
+# more langs
+brew install go python
 
 # neovim and distro
 brew install neovim lazygit

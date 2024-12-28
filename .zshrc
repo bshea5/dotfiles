@@ -139,6 +139,10 @@ alias la='ls -lathr'
 # finds all files recursively and sorts by last modification, ignore hidden files
 alias last='find . -type f -not -path "*/\.*" -exec ls -lrt {} +'
 
+# python
+alias python=python3
+alias pip=pip3
+
 
 # fun
 alias fishies=asciiquarium
