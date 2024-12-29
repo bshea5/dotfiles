@@ -22,3 +22,8 @@ staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑'
 disabled = false
+
+[username]
+show_always = true
+format = '[ $user ]($style)'
+disabled = false
