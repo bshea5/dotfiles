@@ -34,6 +34,11 @@ ln -sf "$PWD/starship/starship.toml" "$XDG_CONFIG_HOME"/starship.toml
 
 # Packages
 
+sudo apt-get update
+sudo apt install gcc g++ unzip
+sudo apt install build-essential
+sudo apt install zsh
+
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -42,12 +47,6 @@ ln -sf "$PWD/starship/starship.toml" "$XDG_CONFIG_HOME"/starship.toml
 # brew packages Mac
 # amethyst fzf nvim exa hugo bash-completion@2 newsboat kubectl starship
 
-# ubuntu apt neovim setup
-sudo apt install gcc g++ unzip
-
-# ubuntu install zsh
-# comment out for macos
-sudo apt install zsh
 
 # GitHub CLI
 brew install gh
