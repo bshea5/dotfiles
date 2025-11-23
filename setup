@@ -62,14 +62,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # more langs
 brew install go python
 
-# neovim and distro
-brew install neovim lazygit
+brew install lazygit
+brew install lazydocker
+
+brew install zed
 
 # cross platform shell prompt
 brew install starship
-
-# alternative editor to vim & nvim
-brew install helix
 
 # Install devbox for emphemeral dev enviroments
 # Installs Nix if not already on machine.
