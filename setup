@@ -65,7 +65,7 @@ brew install go python
 brew install lazygit
 brew install lazydocker
 
-brew install zed
+brew install --cask zed
 
 # cross platform shell prompt
 brew install starship
